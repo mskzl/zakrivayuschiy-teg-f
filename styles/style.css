@@ -319,6 +319,8 @@
 .modal-dialog {
   display: flex;
   flex-direction: column;
+  border: 2px solid var(--accent-color);
+  background-color: var(--background-color);
   padding: 30px 30px;
   max-inline-size: 352px;
   gap: 30px;
@@ -338,6 +340,7 @@
 }
 
 .modal-icon {
+  color: var(--accent-color);
   inline-size: 53px;
   block-size: 53px;
   flex-shrink: 0;
@@ -371,6 +374,10 @@
   filter: brightness(80%) saturate(198%)
 }
 
+.footer {
+  margin: 52px 0 103px 0;
+}
+
 @media (max-width: 376px) {
  
   .header {
@@ -378,11 +385,11 @@
   }
 
   .main {
-    gap: 54px;
+    gap: 52px;
   }
 
   .card-text {
-    padding: 25px 30px 22px 29px;
+    padding: 25px 25px 22px;
   }
 
   .card-button__section {
@@ -395,22 +402,33 @@
 
   .button-save {
     flex-direction: column;
-    inline-size: 306px;
     block-size: 84px;
+    inline-size: 306px;
+    gap: 0px;
   }
 
-  .text-width {
-    min-width: 321px;
+  .button__text-gap {
+    margin-bottom: 4px;
+  }
+
+  .card-title {
+    padding: 5px 10px;
   }
 
   .save-floppy {
-    width: 41px;
-    height: 34px;
+    width: 49px;
+    height: 39px;
+    padding-left: 8px;
   }
 
   .card-image__name {
     top: 23px;
     right: 12px;
+  }
+  
+  .diolog-section {
+    padding-left: 10px;
+    gap: 5px;
   }
 }
   

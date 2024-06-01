@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -48,12 +49,12 @@
     </header>
 
     <main class="main">
-      <section class="card">
+      <article class="card">
         <h2 class="card-title">
           Фритрек и нулевой спринт: Подготовка к работе
         </h2>
         <div class="card-image__section">
-          <span class="card-image__name">&lt;/HTML&gt;</span>
+          <p class="card-image__name">&lt;/HTML&gt;</p>
           <img 
             class="card-image"
             src="./images/image.png"
@@ -107,13 +108,13 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h2 class="card-title">
           1 спринт: Я — чистый лист
         </h2>
         <div class="card-image__section">
-          <span class="card-image__name">&lt;/HTML&gt;</span>
+          <p class="card-image__name">&lt;/HTML&gt;</p>
           <img 
             class="card-image blur"
             src="./images/image.png"
@@ -168,13 +169,13 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h2 class="card-title">
           1 спринт: А если не получится?
         </h2>
         <div class="card-image__section">
-          <span class="card-image__name">&lt;css&gt;</span>
+          <p class="card-image__name">&lt;css&gt;</p>
           <img 
             class="card-image opacity"
             src="./images/image.png"
@@ -228,13 +229,13 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h2 class="card-title">
           2 спринт: Погоня за идеалом
         </h2>
         <div class="card-image__section">
-          <span class="card-image__name">&lt;desigions&gt;</span>
+          <p class="card-image__name">&lt;desigions&gt;</p>
           <img 
             class="card-image saturate"
             src="./images/image.png"
@@ -288,13 +289,13 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h2 class="card-title">
           2 спринт: О тех, кто рядом
         </h2>
         <div class="card-image__section">
-          <span class="card-image__name">&lt;care&gt;</span>
+          <p class="card-image__name">care</p>
           <img 
             class="card-image saturate-hue-rotate-brightness"
             src="./images/image.png"
@@ -349,13 +350,13 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h2 class="card-title">
           3 спринт: Обходные стратегии
         </h2>
         <div class="card-image__section">
-          <span class="card-image__name">&lt;support&gt;</span>
+          <p class="card-image__name">&lt;support&gt;</p>
           <img 
             class="card-image invert"
             src="./images/image.png"
@@ -409,13 +410,13 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h2 class="card-title">
           3 спринт: Когда опускаются руки
         </h2>
         <div class="card-image__section">
-          <span class="card-image__name">&lt;lifes-style: none;&gt;</span>
+          <p class="card-image__name">&lt;lifes-style: none;&gt;</p>
           <img 
             class="card-image grayscale-contrast-brightness-hue-rotate"
             src="./images/image.png"
@@ -469,13 +470,13 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-      <section class="card">
+      </article>
+      <article class="card">
         <h2 class="card-title">
           «Сейчас я здесь»
         </h2>
         <div class="card-image__section">
-          <span class="card-image__name">&lt;experience&gt;</span>
+          <p class="card-image__name">&lt;experience&gt;</p>
           <img 
             class="card-image brightness-saturate"
             src="./images/image.png"
@@ -532,44 +533,36 @@
             <span class="button__text">Like</span>
           </button>
         </div>
-      </section>
-
-      <article class="article">
-        <button
-          type="button"
-          onclick="window.DialogModal.showModal()"
-          aria-controls="DialogModal"
-          class="button button-save"
-        >
-        <svg class="save-floppy">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text"> Сохранить на память</span>
-      </button>
-
-      <dialog class="modal-dialog" id="DialogModal">
-        
-        <div class="diolog-section">
-          <svg class="modal-icon">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-            <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
-        </div>
-        <form method="dialog">
-          <button
-              class="button button-addmit"
-              onclick="window.DialogModal.close()"
-              type="submit"
-              aria-controls="DialogModal"
-            >
-          <span class="button__text">Ok</span>
-            </button>
-        </form>
-    
-      </dialog>
       </article>
     </main>
-    
+    <footer class="footer">
+      <button
+        type="button"
+        onclick="window.DialogModal.showModal()"
+        aria-controls="DialogModal"
+        class="button button-save"
+      >
+      <svg class="save-floppy">
+        <use href="./svg/floppy.svg#floppy"></use>
+      </svg>
+      <span class="button__text button__text-gap"> Сохранить на память</span>
+    </button>
+
+    <dialog class="modal-dialog" id="DialogModal">
+      <div class="diolog-section">
+          <svg class="modal-icon">
+              <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <h3 class="dialog-text">Вставьте дискету, чтобы продолжить</h3>
+      </div>
+      <form method="dialog">
+          <button class="button button-addmit" onclick="window.DialogModal.close()" type="submit" aria-controls="DialogModal">
+              <span class="button__text">Ok</span>
+          </button>
+      </form>
+  </dialog>
+  
+    </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
