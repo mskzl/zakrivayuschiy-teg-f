@@ -351,7 +351,7 @@
   filter: opacity(30%);
 }
 
-.saturate-hue-rotate-brightness{
+.saturate-hue-rotate-brightness {
   filter: saturate(50%) hue-rotate(90deg) brightness(200%);
 }
 
@@ -371,14 +371,46 @@
   filter: brightness(80%) saturate(198%)
 }
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
  
   .header {
     padding-block-start: 120px;
   }
 
   .main {
-    gap: 50px;
+    gap: 54px;
+  }
+
+  .card-text {
+    padding: 25px 30px 22px 29px;
+  }
+
+  .card-button__section {
+    margin-top: 0px;
+  }
+
+  .modal-dialog {
+    inline-size: 341px;
+  }
+
+  .button-save {
+    flex-direction: column;
+    inline-size: 306px;
+    block-size: 84px;
+  }
+
+  .text-width {
+    min-width: 321px;
+  }
+
+  .save-floppy {
+    width: 41px;
+    height: 34px;
+  }
+
+  .card-image__name {
+    top: 23px;
+    right: 12px;
   }
 }
   
