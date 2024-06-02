@@ -536,32 +536,26 @@
       </article>
     </main>
     <footer class="footer">
-      <button
-        type="button"
-        onclick="window.DialogModal.showModal()"
-        aria-controls="DialogModal"
-        class="button button-save"
-      >
-      <svg class="save-floppy">
-        <use href="./svg/floppy.svg#floppy"></use>
-      </svg>
-      <span class="button__text button__text-gap"> Сохранить на память</span>
-    </button>
-
-    <dialog class="modal-dialog" id="DialogModal">
-      <div class="diolog-section">
-          <svg class="modal-icon">
+      <button type="button" onclick="window.DialogModal.showModal()" aria-controls="DialogModal" class="button button-save">
+          <svg class="save-floppy">
               <use href="./svg/floppy.svg#floppy"></use>
           </svg>
-          <h3 class="dialog-text">Вставьте дискету, чтобы продолжить</h3>
-      </div>
-      <form method="dialog">
-          <button class="button button-addmit" onclick="window.DialogModal.close()" type="submit" aria-controls="DialogModal">
-              <span class="button__text">Ok</span>
-          </button>
-      </form>
-  </dialog>
+          <span class="button__text button__text-gap"> Сохранить на память</span>
+      </button>
   
+      <dialog class="modal-dialog" id="DialogModal">
+          <div class="diolog-section">
+              <svg class="modal-icon">
+                  <use href="./svg/floppy.svg#floppy"></use>
+              </svg>
+              <h3 class="dialog-text">Вставьте дискету, чтобы продолжить</h3>
+          </div>
+          <form method="dialog">
+              <button class="button button-addmit" onclick="window.DialogModal.close()" type="submit" aria-controls="DialogModal">
+                  <span class="button__text">Ok</span>
+              </button>
+          </form>
+      </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>

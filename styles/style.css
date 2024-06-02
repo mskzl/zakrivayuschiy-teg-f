@@ -61,9 +61,9 @@
 .header-subtitle {
   font-family: var(--font-accent);
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
- }
+}
 
- .theme-menu__list {
+.theme-menu__list {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -103,7 +103,7 @@
   content: "▶";
   position: absolute;
   display: block;
-  animation: arrow 0.5s infinite alternate-reverse ease-in-out;
+  animation: arrow 0.5s infinitиe alternate-reverse ease-in-out;
   left: -15px;
   top: 1px;
 }
@@ -209,13 +209,16 @@
   cursor: pointer;
   background: none;
   border: none;
-  transition: border 0.3s ease;
-  background: var(--background-color);
   margin-block-start: 2px;
+  height: 38px;
+  padding: 0;
+  border: 2px solid transparent;
 }
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--accent-color);
+  outline: none;
+  transition: 0.3s ease;
 } 
 
 .card__icon-button:focus {
@@ -263,7 +266,6 @@
 }
 
 .button:focus-visible {
-  outline: none;
   box-shadow: 2px 2px 0 var(--accent-color);
 }
 
@@ -323,6 +325,7 @@
   background-color: var(--background-color);
   padding: 30px 30px;
   max-inline-size: 352px;
+  
   gap: 30px;
 }
 
@@ -330,6 +333,11 @@
   display: none;
   opacity: 0;
   pointer-events: none;
+}
+
+
+.modal-dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .button-addmit {
