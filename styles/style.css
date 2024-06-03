@@ -103,7 +103,7 @@
   content: "▶";
   position: absolute;
   display: block;
-  animation: arrow 0.5s infinitиe alternate-reverse ease-in-out;
+  animation: arrow 0.5s infinite alternate-reverse ease-in-out;
   left: -15px;
   top: 1px;
 }
@@ -152,6 +152,7 @@
 
 .card-image__section {
   position: relative;
+  border-bottom: 2px solid var(--accent-color);
 }
 
 .card-image__name {
@@ -202,7 +203,7 @@
   display: flex;
   justify-content: end;
   gap: 3px;
-  margin: 23px 24px 20px;
+  margin: 22px 26px 24px;
 }
 
 .card__icon-button {
@@ -393,7 +394,7 @@
   }
 
   .main {
-    gap: 52px;
+    gap: 50px;
   }
 
   .card-text {
